@@ -15,7 +15,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         layout.scrollDirection = .Horizontal
         layout.minimumLineSpacing = 0
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.backgroundColor = .redColor()
+        cv.backgroundColor = .whiteColor()
         cv.dataSource = self
         cv.delegate = self
         cv.pagingEnabled = true
@@ -23,6 +23,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }()
     
     let cellId = "cellId"
+    
+    let pages: [Page] = {
+        let firstPage = Page(title: "Share a great listen", message: "It's free to send your books to the people in your life. Every recipient's first book is on us.", imageName: "page1")
+        
+        let secondPage = Page(title: "Send from your library", message: "Tap the More menu next to any book. Choose \"Send this Book\"", imageName: "page2")
+        
+        let thirdPage = Page(title: "Send from the player", message: "Tap the More menu in the upper corner. Choose \"Send this Book\"", imageName: "page3")
+        
+        return [firstPage, secondPage, thirdPage]
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +46,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return pages.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as! PageCell
+        
+        let page = pages[indexPath.item]
+        cell.page = page
         
         return cell
     }
