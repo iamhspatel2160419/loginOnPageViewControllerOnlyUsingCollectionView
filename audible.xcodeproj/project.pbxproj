@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C70156211D8DC3B0003E25AF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70156201D8DC3B0003E25AF /* Extensions.swift */; };
+		C7A47C981D8E409C00E7BB0C /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A47C971D8E409C00E7BB0C /* LoginCell.swift */; };
 		C7B401FF1D78C167001D8ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B401FE1D78C167001D8ED4 /* AppDelegate.swift */; };
 		C7B402011D78C167001D8ED4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B402001D78C167001D8ED4 /* ViewController.swift */; };
 		C7B402041D78C167001D8ED4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B402021D78C167001D8ED4 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		C70156201D8DC3B0003E25AF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C7A47C971D8E409C00E7BB0C /* LoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		C7B401FB1D78C167001D8ED4 /* audible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B401FE1D78C167001D8ED4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B402001D78C167001D8ED4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				C7B402101D78C404001D8ED4 /* PageCell.swift */,
 				C7B402181D7A4C8A001D8ED4 /* Page.swift */,
 				C70156201D8DC3B0003E25AF /* Extensions.swift */,
+				C7A47C971D8E409C00E7BB0C /* LoginCell.swift */,
 			);
 			path = audible;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				C7B401FF1D78C167001D8ED4 /* AppDelegate.swift in Sources */,
 				C7B402191D7A4C8A001D8ED4 /* Page.swift in Sources */,
 				C7B402111D78C404001D8ED4 /* PageCell.swift in Sources */,
+				C7A47C981D8E409C00E7BB0C /* LoginCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
